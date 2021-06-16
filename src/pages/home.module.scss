@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+.mainContainer {
+    max-width: 1200px;
+    height: 50vh;
+    margin: 2rem auto 0 auto;
+    border-top: 1px solid gray;
+    padding: 1.5rem;
+
+
+    display: flex;
+=======
+.mainContainer{
+    height: 100vh;
+    width: 100%;
+
+
+
+}
+
+.categoriesDiv{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: 2rem;
+    width: 60%;
+    margin: 0 auto 0 auto;
+
+    &:visited{
+        color:black;
+    }
+
+    a{
+        text-decoration: none;
+
+        &:visited{
+            color:rgb(117, 117, 117);
+        }
+    }
+>>>>>>> 0b01340d150490e949df99635fc9744006a32c2c
+}

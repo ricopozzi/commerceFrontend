@@ -1,0 +1,105 @@
+
+.main{
+    max-width: 1200px;
+    margin: 5rem auto 0 auto;
+    height: 80vh;
+
+    display: flex;
+   
+
+}
+
+.productSession {
+    height: 100%;
+    width: 50%;
+}
+
+.imageContainer{    
+   
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.descriptionContainer {
+    padding: 2rem;
+    height: 55%;
+    width: 100%;
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+
+.paymentContainer {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-left: 1px solid rgb(204, 204, 204);
+
+    span {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 40%;
+        height: 8.5%;
+        margin-top: 2rem;
+        border-radius: 8px;
+        background-color: rgba(65, 137, 230, 0.438);
+
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        justify-content: center;
+        font-weight: 400;
+        color: blue;
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(90%);
+            
+        }
+    }
+}
+
+.numberSelled {
+    color: gray;
+    font-size: .9rem;
+}
+
+.price {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.portion {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #00a650;
+    font-size: 1.2rem;
+
+}

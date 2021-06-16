@@ -1,0 +1,37 @@
+.sectionContainer {
+    max-width: 1120px;
+    height: 6rem;
+    margin: 1rem auto 0 auto;
+    padding: .5rem;
+
+    border:1px solid gray;
+    display: flex;
+    align-items: center;
+
+}
+.iconsContainer {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+ 
+}
+
+.credit{
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    svg {
+        margin-left: 1rem;
+    }
+    
+    p {
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+}
