@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { GetStaticProps } from 'next'
 import axios from 'axios'
 import styles from './styles.module.scss'
@@ -31,44 +30,15 @@ export default function Product({products}){
     )
 }
 
-// export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 
-//     const response = await axios.get('http://localhost:1337/products')
+    const response = await axios.get('http://localhost:1337/products')
   
-//     const products = response.data
+    const products = response.data
   
-//     return {
-//       props: {
-//         products
-//       }
-//     }
-//   }
-=======
-import { GetStaticProps } from 'next';
-import styles from './styles.module.scss'
-import commerce from '../../services/commerce'
-
-export default function Product({ name, price, media }) { 
-    return (
-  
-        <p className={styles.product}>
-          <img src={media.source} alt="" />
-          {name} <br /> 
-          <span>{price.formatted_with_symbol}</span>
-
-        </p>
-
-    );
+    return {
+      props: {
+        products
+      }
+    }
   }
-
-export const getStaticProps: GetStaticProps = async ({params}) => {
-  const { permalink } = params
-
-  
-  const response = await commerce.products.retrieve()
-  
-  return {
-    props: {}
-  }
-}
->>>>>>> 0b01340d150490e949df99635fc9744006a32c2c
